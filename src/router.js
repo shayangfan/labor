@@ -5,8 +5,15 @@ export default [{
   component: home,
   children: [{
     path: '/',
-    redirect: '/loan'
+    redirect: '/index'
   },
+    {
+      path: '/index',
+      meta: {
+        title: '首页'
+      },
+      component: resolve => require(['./view/index'], resolve)
+    },
     {
       path: '/login',
       meta: {
