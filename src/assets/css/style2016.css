@@ -62,7 +62,8 @@ a {
     content: '';
     display: block; }
   .container:before {
-    height: 2.75rem; }
+    /*height: 2.75rem;*/
+  }
   .container:after {
     height: 0.625rem; }
 

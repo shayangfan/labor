@@ -36,12 +36,11 @@ module.exports = {
     loaders: [
       {
         test: /\.vue$/,
-        loader: 'vue',
-        options:{
-        	loaders:{
-        		'scss':'style-loader!css-loader!sass-loader'
-        	}
-        }
+        loader: 'vue'
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
       },
       {
         test: /\.js$/,
@@ -53,10 +52,10 @@ module.exports = {
         test: /\.json$/,
         loader: 'json'
       },
-      {
-	        test: /\.css$/,
-	        loader: 'style-loader!css-loader'
-	    },
+      //{
+	   //     test: /\.css$/,
+	   //     loader: 'style-loader!css-loader'
+	   // },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url',

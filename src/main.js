@@ -4,6 +4,9 @@ import store from './store'
 
 Vue.use(VueRouter);
 
+import VueVideoPlayer from 'vue-video-player'
+Vue.use(VueVideoPlayer)
+
 //引入根模板
 import home from './components/home'
 
